@@ -261,11 +261,8 @@ class ColoredChestKukaEnv(gym.Env):
         self.step_count = 0
         self.consecutive_close_steps = 0
         self.prev_target_chest_pos = None
-<<<<<<< HEAD
         self.prev_distance = None
         self.sim_steps_per_action = 8
-=======
->>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700
 
         self.action_space = spaces.Box(
             low=-self.action_scale,
@@ -277,11 +274,7 @@ class ColoredChestKukaEnv(gym.Env):
         self.observation_space = spaces.Box(
             low=-np.inf,
             high=np.inf,
-<<<<<<< HEAD
             shape=(14,),
-=======
-            shape=(10,),
->>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700
             dtype=np.float32,
         )
 
@@ -476,10 +469,7 @@ class ColoredChestKukaEnv(gym.Env):
             self._get_chest_top_center(self.chest_ids[self.target_idx]),
             dtype=np.float32,
         )
-<<<<<<< HEAD
         self.prev_distance = self._distance_to_target()
-=======
->>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700
 
         return self._get_obs(), {
             "target_idx": self.target_idx,
@@ -563,18 +553,14 @@ class ColoredChestKukaEnv(gym.Env):
         ee_pos = self._get_end_effector_position()
         target_pos = self._get_chest_top_center(self.chest_ids[self.target_idx])
 
-<<<<<<< HEAD
         rel_pos = target_pos - ee_pos
         distance = np.array([np.linalg.norm(rel_pos)], dtype=np.float32)
 
-=======
->>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700
         target_one_hot = np.zeros(self.num_chests, dtype=np.float32)
         target_one_hot[self.target_idx] = 1.0
 
         progress = np.array([self.step_count / max(1, self.max_steps)], dtype=np.float32)
 
-<<<<<<< HEAD
         return np.concatenate(
             [ee_pos, target_pos, rel_pos, distance, target_one_hot, progress]
         ).astype(np.float32)
@@ -588,14 +574,6 @@ class ColoredChestKukaEnv(gym.Env):
         action:
             The clipped Cartesian action applied at the current environment step.
 
-=======
-        return np.concatenate([ee_pos, target_pos, target_one_hot, progress]).astype(np.float32)
-
-    def _compute_reward_and_success(self):
-        """
-        Compute the scalar reward, success flag, and current target distance.
-
->>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700
         Returns
         -------
         tuple
@@ -606,7 +584,6 @@ class ColoredChestKukaEnv(gym.Env):
             - ``distance`` is the current Euclidean distance to the target
         """
         distance = self._distance_to_target()
-<<<<<<< HEAD
         action_norm = float(np.linalg.norm(action))
 
         next_close_steps = self.consecutive_close_steps + 1 if distance < self.success_distance else 0
@@ -638,30 +615,6 @@ class ColoredChestKukaEnv(gym.Env):
             reward += 60.0
 
         self.prev_distance = distance
-=======
-        reward = -distance
-
-        if self.reward_type == "advanced":
-            shaping_radius = 0.20
-            if distance <= shaping_radius:
-                bonus_scale = 1.0 - (distance / shaping_radius)
-                reward += 10.0 * bonus_scale
-
-            current_target_pos = self._get_chest_top_center(self.chest_ids[self.target_idx])
-            chest_move_dist = float(np.linalg.norm(current_target_pos - self.prev_target_chest_pos))
-            if chest_move_dist > 1e-6:
-                reward -= 10.0 * chest_move_dist
-            self.prev_target_chest_pos = current_target_pos.copy()
-
-        if distance < self.success_distance:
-            self.consecutive_close_steps += 1
-        else:
-            self.consecutive_close_steps = 0
-
-        success = self.consecutive_close_steps >= self.success_hold_steps
-        if success:
-            reward += 20.0
->>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700
 
         return float(reward), bool(success), float(distance)
 
@@ -711,18 +664,11 @@ class ColoredChestKukaEnv(gym.Env):
                 force=500,
             )
 
-<<<<<<< HEAD
         for _ in range(self.sim_steps_per_action):
             p.stepSimulation()
 
         obs = self._get_obs()
         reward, success, distance = self._compute_reward_and_success(action)
-=======
-        p.stepSimulation()
-
-        obs = self._get_obs()
-        reward, success, distance = self._compute_reward_and_success()
->>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700
 
         terminated = success
         truncated = self.step_count >= self.max_steps

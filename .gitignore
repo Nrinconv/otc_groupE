@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # =========================
 # python
 # =========================
@@ -102,17 +101,3 @@ models/kuka/*.pth
 # data/openthechests/
 # models/openthechests/
 # results/openthechests/
-=======
-
-.venv/
-venv/
-env/
-
-
-__pycache__/
-*.pyc
-
-.DS_Store
-.vscode/
-.idea/
->>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700
