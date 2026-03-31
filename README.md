@@ -47,7 +47,10 @@ This module connects the OpenTheChests predictor with the KUKA controller and ev
 │
 ├── docs/
 │   ├── README_openthechests.md
+<<<<<<< HEAD
 │   ├── README_kuka.md
+=======
+>>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700
 │   ├── results_openthechests.md
 │   └── integration_contract.md
 │
@@ -146,9 +149,12 @@ The most relevant documents for the current stage are:
 - `docs/results_openthechests.md`  
   Experimental results for the OpenTheChests baselines
 
+<<<<<<< HEAD
 - `docs/README_kuka.md`  
   Technical overview of the Member 2 KUKA control module
 
+=======
+>>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700
 - `docs/integration_contract.md`  
   Stable interface expected by Member 2 and Member 3
 
