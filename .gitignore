@@ -1,0 +1,103 @@
+# =========================
+# python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# packaging / build
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# =========================
+# jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# editors / os
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# =========================
+# test / cache / coverage
+# =========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# =========================
+# logs
+# =========================
+*.log
+logs/
+
+# =========================
+# local environment files
+# =========================
+.env
+.env.*
+.python-version
+
+# =========================
+# training artifacts - kuka
+# =========================
+results/kuka/ppo_logs/
+results/kuka/sac_logs/
+results/kuka/controller_eval.json
+results/kuka/checkpoints/
+results/kuka/train_monitor/
+results/kuka/eval/
+results/kuka/tb/
+
+models/kuka/*.zip
+models/kuka/*.pkl
+models/kuka/*.pt
+models/kuka/*.pth
+
+# keep final selected kuka artifacts
+!models/kuka/ppo_colored_chest.zip
+!models/kuka/ppo_vecnormalize.pkl
+
+# =========================
+# temporary exports
+# =========================
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# =========================
+# pybullet / rendered outputs
+# =========================
+*.mp4
+*.gif
+*.avi
+
+# =========================
+# do not ignore project source/data/docs
+# =========================
+# keep:
+# src/
+# scripts/
+# docs/
+# data/openthechests/
+# models/openthechests/
+# results/openthechests/

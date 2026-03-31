@@ -1,0 +1,36 @@
+{
+  "algorithm": "PPO",
+  "env_id": "ColoredChestKuka-v0",
+  "reward_type": "advanced",
+  "max_steps": 150,
+  "total_timesteps": 1000000,
+  "n_envs": 4,
+  "seed": 42,
+  "saved_model": "models/kuka/ppo_colored_chest.zip",
+  "saved_vecnormalize": "models/kuka/ppo_vecnormalize.pkl",
+  "hyperparameters": {
+    "learning_rate": 3e-05,
+    "n_steps": 512,
+    "batch_size": 128,
+    "n_epochs": 20,
+    "gamma": 0.99,
+    "gae_lambda": 0.9,
+    "clip_range": 0.4,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "use_sde": true,
+    "sde_sample_freq": 4,
+    "policy_net": [
+      256,
+      256
+    ],
+    "value_net": [
+      256,
+      256
+    ],
+    "activation": "ReLU",
+    "ortho_init": false,
+    "log_std_init": -2
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "OpenTheChests-v0": {
+    "type": "mlp",
+    "path": "mlp_v0.pkl"
+  },
+  "OpenTheChests-v1": {
+    "type": "mlp",
+    "path": "mlp_v1.pkl"
+  },
+  "OpenTheChests-v2": {
+    "type": "lstm",
+    "path": "lstm_v2.pt",
+    "input_dim": 40,
+    "hidden_dim": 64,
+    "num_layers": 1,
+    "num_classes": 8
+  }
+}
