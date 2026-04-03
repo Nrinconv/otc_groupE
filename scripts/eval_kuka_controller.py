@@ -14,8 +14,8 @@ from src.kuka import KukaChestController
 
 def make_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Evaluate the KUKA controller.")
-    parser.add_argument("--mode", type=str, default="auto", choices=["auto", "heuristic", "ppo", "sac"])
-    parser.add_argument("--model-path", type=str, default="models/kuka/sac_colored_chest.zip")
+    parser.add_argument("--mode", type=str, default="auto", choices=["auto", "heuristic", "ppo"])
+    parser.add_argument("--model-path", type=str, default="models/kuka/ppo_colored_chest.zip")
     parser.add_argument("--reward-type", type=str, default="advanced", choices=["basic", "advanced"])
     parser.add_argument("--max-steps", type=int, default=150)
     parser.add_argument("--n-episodes", type=int, default=30)
