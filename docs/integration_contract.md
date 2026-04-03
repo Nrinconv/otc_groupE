@@ -2,7 +2,6 @@
 
 ## Purpose
 
-<<<<<<< HEAD
 This repository now exposes two stable layers that Member 3 can connect directly:
 
 - the **OpenTheChests decision layer**
@@ -179,22 +178,3 @@ Once the pipeline is stable, Member 3 can run a second set of experiments with:
 - `KukaChestController(mode="ppo")`
 
 This allows the final report to compare a robust integration controller against a learned continuous-control controller.
-=======
-This module implements the **OpenTheChests decision layer** of the project.
-
-Its role is to process the observation history from an `OpenTheChests` environment and predict either:
-
-- a chest-opening action as a 3-bit vector
-- or a unique chest target index compatible with the KUKA module
-
-This corresponds to the activity-recognition side of the project.
-
----
-
-## Public API
-
-The main public entry point is:
-
-```python
-from src.openthechests.predict import OpenTheChestsPredictor
->>>>>>> dcc563a5e99104beacd8752d43c68dc3e23fe700

@@ -1,0 +1,3876 @@
+{
+  "env_names": [
+    "OpenTheChests-v0",
+    "OpenTheChests-v1"
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "max_steps": 20,
+  "predictor_modes": [
+    "auto",
+    "rule"
+  ],
+  "kuka_modes": [
+    "heuristic"
+  ],
+  "kuka_reward_type": "advanced",
+  "invoke_kuka_once_per_target": false,
+  "experiments": [
+    {
+      "predictor_mode": "auto",
+      "kuka_mode": "heuristic",
+      "overall": {
+        "n_episodes": 4,
+        "episode_decision_rate": 1.0,
+        "episode_correct_decision_rate": 1.0,
+        "episode_kuka_invocation_rate": 1.0,
+        "episode_success_rate": 1.0,
+        "decision_accuracy": 1.0,
+        "mean_otc_return": 3.0,
+        "mean_otc_steps": 8.0,
+        "mean_target_detections": 3.0,
+        "mean_correct_target_detections": 3.0,
+        "mean_kuka_invocations": 3.0,
+        "mean_successful_kuka_invocations": 3.0,
+        "mean_first_detection_step": 4.5,
+        "mean_first_correct_detection_step": 4.5,
+        "mean_first_successful_kuka_step": 4.5,
+        "mean_first_correct_successful_kuka_step": 4.5,
+        "kuka_success_rate_given_invocation": 1.0,
+        "kuka_success_rate_given_correct_decision": 1.0,
+        "mean_kuka_final_distance": 0.021679514398177464,
+        "mean_kuka_steps": 16.0,
+        "n_total_kuka_invocations": 12,
+        "n_successful_kuka_invocations": 12,
+        "n_decisions": 12,
+        "n_correct_decisions": 12,
+        "n_correct_and_successful_kuka_invocations": 12
+      },
+      "by_env": {
+        "OpenTheChests-v0": {
+          "n_episodes": 2,
+          "episode_decision_rate": 1.0,
+          "episode_correct_decision_rate": 1.0,
+          "episode_kuka_invocation_rate": 1.0,
+          "episode_success_rate": 1.0,
+          "decision_accuracy": 1.0,
+          "mean_otc_return": 3.0,
+          "mean_otc_steps": 3.0,
+          "mean_target_detections": 3.0,
+          "mean_correct_target_detections": 3.0,
+          "mean_kuka_invocations": 3.0,
+          "mean_successful_kuka_invocations": 3.0,
+          "mean_first_detection_step": 0.0,
+          "mean_first_correct_detection_step": 0.0,
+          "mean_first_successful_kuka_step": 0.0,
+          "mean_first_correct_successful_kuka_step": 0.0,
+          "kuka_success_rate_given_invocation": 1.0,
+          "kuka_success_rate_given_correct_decision": 1.0,
+          "mean_kuka_final_distance": 0.021679514398177464,
+          "mean_kuka_steps": 16.0,
+          "n_total_kuka_invocations": 6,
+          "n_successful_kuka_invocations": 6,
+          "n_decisions": 6,
+          "n_correct_decisions": 6,
+          "n_correct_and_successful_kuka_invocations": 6
+        },
+        "OpenTheChests-v1": {
+          "n_episodes": 2,
+          "episode_decision_rate": 1.0,
+          "episode_correct_decision_rate": 1.0,
+          "episode_kuka_invocation_rate": 1.0,
+          "episode_success_rate": 1.0,
+          "decision_accuracy": 1.0,
+          "mean_otc_return": 3.0,
+          "mean_otc_steps": 13.0,
+          "mean_target_detections": 3.0,
+          "mean_correct_target_detections": 3.0,
+          "mean_kuka_invocations": 3.0,
+          "mean_successful_kuka_invocations": 3.0,
+          "mean_first_detection_step": 9.0,
+          "mean_first_correct_detection_step": 9.0,
+          "mean_first_successful_kuka_step": 9.0,
+          "mean_first_correct_successful_kuka_step": 9.0,
+          "kuka_success_rate_given_invocation": 1.0,
+          "kuka_success_rate_given_correct_decision": 1.0,
+          "mean_kuka_final_distance": 0.021679514398177464,
+          "mean_kuka_steps": 16.0,
+          "n_total_kuka_invocations": 6,
+          "n_successful_kuka_invocations": 6,
+          "n_decisions": 6,
+          "n_correct_decisions": 6,
+          "n_correct_and_successful_kuka_invocations": 6
+        }
+      },
+      "raw": {
+        "env_names": [
+          "OpenTheChests-v0",
+          "OpenTheChests-v1"
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "max_steps": 20,
+        "invoke_kuka_once_per_target": false,
+        "n_runs": 4,
+        "n_kuka_invocations": 12,
+        "kuka_success_rate": 1.0,
+        "runs": [
+          {
+            "env_name": "OpenTheChests-v0",
+            "seed": 0,
+            "total_steps": 3,
+            "opened_targets": [
+              2,
+              0,
+              1
+            ],
+            "otc_return": 3.0,
+            "otc_terminated": true,
+            "otc_truncated": false,
+            "steps": [
+              {
+                "step": 0,
+                "history_length": 1,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 0,
+                  "bg": 3,
+                  "start": 4.702791534208636,
+                  "end": 8.058121077896544,
+                  "duration": 3.3553295436879083
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "oracle_target_idx": 2,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 195.94399102183058,
+                  "final_distance": 0.02310916967689991,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 1,
+                "history_length": 2,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "e_type": 0,
+                  "fg": 2,
+                  "bg": 1,
+                  "start": 1.6888437030500962,
+                  "end": 8.216307413760488,
+                  "duration": 6.527463710710391
+                },
+                "oracle_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": 0,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 195.4591264349036,
+                  "final_distance": 0.02340993471443653,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 2,
+                "history_length": 3,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "e_type": 1,
+                  "fg": 4,
+                  "bg": 0,
+                  "start": 1.0356670011718534,
+                  "end": 11.1331793884046,
+                  "duration": 10.097512387232745
+                },
+                "oracle_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "oracle_target_idx": 1,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": true,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 189.16875356765465,
+                  "final_distance": 0.017842456698417664,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              }
+            ]
+          },
+          {
+            "env_name": "OpenTheChests-v0",
+            "seed": 1,
+            "total_steps": 3,
+            "opened_targets": [
+              0,
+              2,
+              1
+            ],
+            "otc_return": 3.0,
+            "otc_terminated": true,
+            "otc_truncated": false,
+            "steps": [
+              {
+                "step": 0,
+                "history_length": 1,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 2,
+                  "bg": 1,
+                  "start": 0.26872848822480244,
+                  "end": 3.603191003122287,
+                  "duration": 3.334462514897485
+                },
+                "oracle_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": 0,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 193.9617584657483,
+                  "final_distance": 0.02166765369474888,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 1,
+                "history_length": 2,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 0,
+                  "bg": 3,
+                  "start": 0.5631575206454094,
+                  "end": 4.0779648482993265,
+                  "duration": 3.514807327653917
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "oracle_target_idx": 2,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 189.917415953055,
+                  "final_distance": 0.02170596830546856,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 2,
+                "history_length": 3,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "e_type": 1,
+                  "fg": 4,
+                  "bg": 0,
+                  "start": 1.7979642591549525,
+                  "end": 14.797964259154952,
+                  "duration": 13.0
+                },
+                "oracle_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "oracle_target_idx": 1,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": true,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 195.33470972862096,
+                  "final_distance": 0.022341903299093246,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              }
+            ]
+          },
+          {
+            "env_name": "OpenTheChests-v1",
+            "seed": 0,
+            "total_steps": 13,
+            "opened_targets": [
+              0,
+              2,
+              1
+            ],
+            "otc_return": 3.0,
+            "otc_terminated": true,
+            "otc_truncated": false,
+            "steps": [
+              {
+                "step": 0,
+                "history_length": 1,
+                "observation": {
+                  "active": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 1.431344246612821,
+                  "end": 6.754705995360148,
+                  "duration": 5.323361748747327
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 1,
+                "history_length": 2,
+                "observation": {
+                  "active": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 0.8444218515250481,
+                  "end": 7.371885562235439,
+                  "duration": 6.527463710710391
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 2,
+                "history_length": 3,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 10,
+                  "fg": 7,
+                  "bg": 6,
+                  "start": 7.02271418562653,
+                  "end": 11.907886160442528,
+                  "duration": 4.885171974815998
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 3,
+                "history_length": 4,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 7.9314831852663525,
+                  "end": 13.341349370845432,
+                  "duration": 5.409866185579079
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 4,
+                "history_length": 5,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 7,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 9.59865759014875,
+                  "end": 14.676789092693465,
+                  "duration": 5.078131502544714
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 5,
+                "history_length": 6,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 0,
+                  "bg": 1,
+                  "start": 13.563874574964538,
+                  "end": 15.055206093595778,
+                  "duration": 1.49133151863124
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 6,
+                "history_length": 7,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 2,
+                  "bg": 2,
+                  "start": 4.936296005165064,
+                  "end": 15.315255037130488,
+                  "duration": 10.378959031965422
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 7,
+                "history_length": 8,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 10.37188556223544,
+                  "end": 17.6793804767874,
+                  "duration": 7.307494914551961
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 8,
+                "history_length": 9,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 3,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 13.341349370845432,
+                  "end": 19.13664672783717,
+                  "duration": 5.795297356991739
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 9,
+                "history_length": 10,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 1,
+                  "bg": 2,
+                  "start": 15.055206093595778,
+                  "end": 22.765865180971595,
+                  "duration": 7.7106590873758165
+                },
+                "oracle_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": 0,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 195.4591264349036,
+                  "final_distance": 0.02340993471443653,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 10,
+                "history_length": 11,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 5,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 17.676789092693465,
+                  "end": 24.676789092693465,
+                  "duration": 7.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 11,
+                "history_length": 12,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 25.676789092693465,
+                  "end": 31.784211893876193,
+                  "duration": 6.107422801182729
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "oracle_target_idx": 2,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 195.94399102183058,
+                  "final_distance": 0.02310916967689991,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 12,
+                "history_length": 13,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "e_type": 0,
+                  "fg": 2,
+                  "bg": 2,
+                  "start": 20.25972740793091,
+                  "end": 35.57730911816976,
+                  "duration": 15.317581710238848
+                },
+                "oracle_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "oracle_target_idx": 1,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": true,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 189.16875356765465,
+                  "final_distance": 0.017842456698417664,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              }
+            ]
+          },
+          {
+            "env_name": "OpenTheChests-v1",
+            "seed": 1,
+            "total_steps": 13,
+            "opened_targets": [
+              0,
+              1,
+              2
+            ],
+            "otc_return": 3.0,
+            "otc_terminated": true,
+            "otc_truncated": false,
+            "steps": [
+              {
+                "step": 0,
+                "history_length": 1,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 0.13436424411240122,
+                  "end": 3.468826759009886,
+                  "duration": 3.334462514897485
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 1,
+                "history_length": 2,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 3.248458477555201,
+                  "end": 8.525646704708045,
+                  "duration": 5.277188227152844
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 2,
+                "history_length": 3,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 2.074732749508542,
+                  "end": 9.074732749508541,
+                  "duration": 7.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 3,
+                "history_length": 4,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 0,
+                  "bg": 1,
+                  "start": 7.800416521797478,
+                  "end": 11.89365310956754,
+                  "duration": 4.093236587770061
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 4,
+                "history_length": 5,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 5.961616516088393,
+                  "end": 14.464212765875674,
+                  "duration": 8.502596249787281
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 5,
+                "history_length": 6,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 3,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 8.525646704708045,
+                  "end": 14.525646704708045,
+                  "duration": 6.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 6,
+                "history_length": 7,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 2,
+                  "bg": 2,
+                  "start": 3.2477306776274917,
+                  "end": 14.888207123329565,
+                  "duration": 11.640476445702074
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 7,
+                "history_length": 8,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 7,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 10.074732749508541,
+                  "end": 17.07473274950854,
+                  "duration": 7.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 8,
+                "history_length": 9,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 10,
+                  "fg": 5,
+                  "bg": 5,
+                  "start": 17.9726252337527,
+                  "end": 18.840234839433478,
+                  "duration": 0.8676096056807765
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 9,
+                "history_length": 10,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 1,
+                  "bg": 2,
+                  "start": 11.89365310956754,
+                  "end": 19.923267764875373,
+                  "duration": 8.029614655307833
+                },
+                "oracle_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": 0,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 193.9617584657483,
+                  "final_distance": 0.02166765369474888,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 10,
+                "history_length": 11,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 5,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 18.9423674175469,
+                  "end": 25.679536149585903,
+                  "duration": 6.737168732039002
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 11,
+                "history_length": 12,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 2,
+                  "bg": 2,
+                  "start": 17.328612783886523,
+                  "end": 30.328612783886523,
+                  "duration": 13.0
+                },
+                "oracle_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "oracle_target_idx": 1,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 195.33470972862096,
+                  "final_distance": 0.022341903299093246,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 12,
+                "history_length": 13,
+                "observation": {
+                  "active": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    1,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 27.189772510427716,
+                  "end": 32.15272827188981,
+                  "duration": 4.962955761462098
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "oracle_target_idx": 2,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": true,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 189.917415953055,
+                  "final_distance": 0.02170596830546856,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "predictor_mode": "rule",
+      "kuka_mode": "heuristic",
+      "overall": {
+        "n_episodes": 4,
+        "episode_decision_rate": 1.0,
+        "episode_correct_decision_rate": 1.0,
+        "episode_kuka_invocation_rate": 1.0,
+        "episode_success_rate": 1.0,
+        "decision_accuracy": 0.25806451612903225,
+        "mean_otc_return": -5.0,
+        "mean_otc_steps": 11.5,
+        "mean_target_detections": 7.75,
+        "mean_correct_target_detections": 2.0,
+        "mean_kuka_invocations": 7.75,
+        "mean_successful_kuka_invocations": 7.75,
+        "mean_first_detection_step": 0.0,
+        "mean_first_correct_detection_step": 4.5,
+        "mean_first_successful_kuka_step": 0.0,
+        "mean_first_correct_successful_kuka_step": 4.5,
+        "kuka_success_rate_given_invocation": 1.0,
+        "kuka_success_rate_given_correct_decision": 1.0,
+        "mean_kuka_final_distance": 0.02167913179484106,
+        "mean_kuka_steps": 16.0,
+        "n_total_kuka_invocations": 31,
+        "n_successful_kuka_invocations": 31,
+        "n_decisions": 31,
+        "n_correct_decisions": 8,
+        "n_correct_and_successful_kuka_invocations": 8
+      },
+      "by_env": {
+        "OpenTheChests-v0": {
+          "n_episodes": 2,
+          "episode_decision_rate": 1.0,
+          "episode_correct_decision_rate": 1.0,
+          "episode_kuka_invocation_rate": 1.0,
+          "episode_success_rate": 1.0,
+          "decision_accuracy": 1.0,
+          "mean_otc_return": 3.0,
+          "mean_otc_steps": 3.0,
+          "mean_target_detections": 3.0,
+          "mean_correct_target_detections": 3.0,
+          "mean_kuka_invocations": 3.0,
+          "mean_successful_kuka_invocations": 3.0,
+          "mean_first_detection_step": 0.0,
+          "mean_first_correct_detection_step": 0.0,
+          "mean_first_successful_kuka_step": 0.0,
+          "mean_first_correct_successful_kuka_step": 0.0,
+          "kuka_success_rate_given_invocation": 1.0,
+          "kuka_success_rate_given_correct_decision": 1.0,
+          "mean_kuka_final_distance": 0.021679514398177464,
+          "mean_kuka_steps": 16.0,
+          "n_total_kuka_invocations": 6,
+          "n_successful_kuka_invocations": 6,
+          "n_decisions": 6,
+          "n_correct_decisions": 6,
+          "n_correct_and_successful_kuka_invocations": 6
+        },
+        "OpenTheChests-v1": {
+          "n_episodes": 2,
+          "episode_decision_rate": 1.0,
+          "episode_correct_decision_rate": 1.0,
+          "episode_kuka_invocation_rate": 1.0,
+          "episode_success_rate": 1.0,
+          "decision_accuracy": 0.08,
+          "mean_otc_return": -13.0,
+          "mean_otc_steps": 20.0,
+          "mean_target_detections": 12.5,
+          "mean_correct_target_detections": 1.0,
+          "mean_kuka_invocations": 12.5,
+          "mean_successful_kuka_invocations": 12.5,
+          "mean_first_detection_step": 0.0,
+          "mean_first_correct_detection_step": 9.0,
+          "mean_first_successful_kuka_step": 0.0,
+          "mean_first_correct_successful_kuka_step": 9.0,
+          "kuka_success_rate_given_invocation": 1.0,
+          "kuka_success_rate_given_correct_decision": 1.0,
+          "mean_kuka_final_distance": 0.021679039970040323,
+          "mean_kuka_steps": 16.0,
+          "n_total_kuka_invocations": 25,
+          "n_successful_kuka_invocations": 25,
+          "n_decisions": 25,
+          "n_correct_decisions": 2,
+          "n_correct_and_successful_kuka_invocations": 2
+        }
+      },
+      "raw": {
+        "env_names": [
+          "OpenTheChests-v0",
+          "OpenTheChests-v1"
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "max_steps": 20,
+        "invoke_kuka_once_per_target": false,
+        "n_runs": 4,
+        "n_kuka_invocations": 31,
+        "kuka_success_rate": 1.0,
+        "runs": [
+          {
+            "env_name": "OpenTheChests-v0",
+            "seed": 0,
+            "total_steps": 3,
+            "opened_targets": [
+              2,
+              0,
+              1
+            ],
+            "otc_return": 3.0,
+            "otc_terminated": true,
+            "otc_truncated": false,
+            "steps": [
+              {
+                "step": 0,
+                "history_length": 1,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 0,
+                  "bg": 3,
+                  "start": 4.702791534208636,
+                  "end": 8.058121077896544,
+                  "duration": 3.3553295436879083
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "oracle_target_idx": 2,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 195.94399102183058,
+                  "final_distance": 0.02310916967689991,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 1,
+                "history_length": 2,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "e_type": 0,
+                  "fg": 2,
+                  "bg": 1,
+                  "start": 1.6888437030500962,
+                  "end": 8.216307413760488,
+                  "duration": 6.527463710710391
+                },
+                "oracle_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": 0,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 195.4591264349036,
+                  "final_distance": 0.02340993471443653,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 2,
+                "history_length": 3,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "e_type": 1,
+                  "fg": 4,
+                  "bg": 0,
+                  "start": 1.0356670011718534,
+                  "end": 11.1331793884046,
+                  "duration": 10.097512387232745
+                },
+                "oracle_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "oracle_target_idx": 1,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": true,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 189.16875356765465,
+                  "final_distance": 0.017842456698417664,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              }
+            ]
+          },
+          {
+            "env_name": "OpenTheChests-v0",
+            "seed": 1,
+            "total_steps": 3,
+            "opened_targets": [
+              0,
+              2,
+              1
+            ],
+            "otc_return": 3.0,
+            "otc_terminated": true,
+            "otc_truncated": false,
+            "steps": [
+              {
+                "step": 0,
+                "history_length": 1,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 2,
+                  "bg": 1,
+                  "start": 0.26872848822480244,
+                  "end": 3.603191003122287,
+                  "duration": 3.334462514897485
+                },
+                "oracle_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": 0,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 193.9617584657483,
+                  "final_distance": 0.02166765369474888,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 1,
+                "history_length": 2,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 0,
+                  "bg": 3,
+                  "start": 0.5631575206454094,
+                  "end": 4.0779648482993265,
+                  "duration": 3.514807327653917
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "oracle_target_idx": 2,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 189.917415953055,
+                  "final_distance": 0.02170596830546856,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 2,
+                "history_length": 3,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "e_type": 1,
+                  "fg": 4,
+                  "bg": 0,
+                  "start": 1.7979642591549525,
+                  "end": 14.797964259154952,
+                  "duration": 13.0
+                },
+                "oracle_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "oracle_target_idx": 1,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": true,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 195.33470972862096,
+                  "final_distance": 0.022341903299093246,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              }
+            ]
+          },
+          {
+            "env_name": "OpenTheChests-v1",
+            "seed": 0,
+            "total_steps": 20,
+            "opened_targets": [
+              2,
+              0,
+              1,
+              2,
+              1,
+              2,
+              0,
+              0,
+              0,
+              2,
+              1,
+              1
+            ],
+            "otc_return": -12.0,
+            "otc_terminated": false,
+            "otc_truncated": false,
+            "steps": [
+              {
+                "step": 0,
+                "history_length": 1,
+                "observation": {
+                  "active": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 1.431344246612821,
+                  "end": 6.754705995360148,
+                  "duration": 5.323361748747327
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 195.94399102183058,
+                  "final_distance": 0.02310916967689991,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 1,
+                "history_length": 2,
+                "observation": {
+                  "active": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 0.8444218515250481,
+                  "end": 7.371885562235439,
+                  "duration": 6.527463710710391
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 195.4591264349036,
+                  "final_distance": 0.02340993471443653,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 2,
+                "history_length": 3,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 10,
+                  "fg": 7,
+                  "bg": 6,
+                  "start": 7.02271418562653,
+                  "end": 11.907886160442528,
+                  "duration": 4.885171974815998
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 3,
+                "history_length": 4,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 7.9314831852663525,
+                  "end": 13.341349370845432,
+                  "duration": 5.409866185579079
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 189.16875356765465,
+                  "final_distance": 0.017842456698417664,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 4,
+                "history_length": 5,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 7,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 9.59865759014875,
+                  "end": 14.676789092693465,
+                  "duration": 5.078131502544714
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 5,
+                "history_length": 6,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 0,
+                  "bg": 1,
+                  "start": 13.563874574964538,
+                  "end": 15.055206093595778,
+                  "duration": 1.49133151863124
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 195.94399102183058,
+                  "final_distance": 0.02310916967689991,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 6,
+                "history_length": 7,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 2,
+                  "bg": 2,
+                  "start": 4.936296005165064,
+                  "end": 15.315255037130488,
+                  "duration": 10.378959031965422
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 189.16875356765465,
+                  "final_distance": 0.017842456698417664,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 7,
+                "history_length": 8,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 10.37188556223544,
+                  "end": 17.6793804767874,
+                  "duration": 7.307494914551961
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 195.94399102183058,
+                  "final_distance": 0.02310916967689991,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 8,
+                "history_length": 9,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 3,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 13.341349370845432,
+                  "end": 19.13664672783717,
+                  "duration": 5.795297356991739
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 9,
+                "history_length": 10,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 1,
+                  "bg": 2,
+                  "start": 15.055206093595778,
+                  "end": 22.765865180971595,
+                  "duration": 7.7106590873758165
+                },
+                "oracle_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": 0,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 195.4591264349036,
+                  "final_distance": 0.02340993471443653,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 10,
+                "history_length": 11,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 5,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 17.676789092693465,
+                  "end": 24.676789092693465,
+                  "duration": 7.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 11,
+                "history_length": 12,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 25.676789092693465,
+                  "end": 31.784211893876193,
+                  "duration": 6.107422801182729
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "oracle_target_idx": 2,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": false,
+                "otc_reward": -2.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 195.4591264349036,
+                  "final_distance": 0.02340993471443653,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 12,
+                "history_length": 13,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 2,
+                  "bg": 2,
+                  "start": 20.25972740793091,
+                  "end": 35.57730911816976,
+                  "duration": 15.317581710238848
+                },
+                "oracle_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "oracle_target_idx": 1,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": false,
+                "otc_reward": -2.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 195.4591264349036,
+                  "final_distance": 0.02340993471443653,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 13,
+                "history_length": 14,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 36.40592954423292,
+                  "end": 42.50268742290742,
+                  "duration": 6.096757878674502
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 195.94399102183058,
+                  "final_distance": 0.02310916967689991,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 14,
+                "history_length": 15,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 41.36299640979064,
+                  "end": 47.07334742071985,
+                  "duration": 5.710351010929209
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 189.16875356765465,
+                  "final_distance": 0.017842456698417664,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 15,
+                "history_length": 16,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 2,
+                  "bg": 2,
+                  "start": 39.550223976722634,
+                  "end": 47.550223976722634,
+                  "duration": 8.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 189.16875356765465,
+                  "final_distance": 0.017842456698417664,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 16,
+                "history_length": 17,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 7,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 43.66011718340691,
+                  "end": 49.41361874805554,
+                  "duration": 5.75350156464863
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 17,
+                "history_length": 18,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 3,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 47.07334742071985,
+                  "end": 53.07334742071985,
+                  "duration": 6.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 18,
+                "history_length": 19,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 10,
+                  "fg": 7,
+                  "bg": 7,
+                  "start": 40.55774134787014,
+                  "end": 56.19704122162068,
+                  "duration": 15.639299873750538
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 19,
+                "history_length": 20,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 5,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 52.17076127783395,
+                  "end": 59.17076127783395,
+                  "duration": 7.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              }
+            ]
+          },
+          {
+            "env_name": "OpenTheChests-v1",
+            "seed": 1,
+            "total_steps": 20,
+            "opened_targets": [
+              0,
+              1,
+              2,
+              2,
+              2,
+              1,
+              0,
+              0,
+              0,
+              2,
+              1,
+              1,
+              0
+            ],
+            "otc_return": -14.0,
+            "otc_terminated": false,
+            "otc_truncated": false,
+            "steps": [
+              {
+                "step": 0,
+                "history_length": 1,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 0.13436424411240122,
+                  "end": 3.468826759009886,
+                  "duration": 3.334462514897485
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 193.9617584657483,
+                  "final_distance": 0.02166765369474888,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 1,
+                "history_length": 2,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 3.248458477555201,
+                  "end": 8.525646704708045,
+                  "duration": 5.277188227152844
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 195.33470972862096,
+                  "final_distance": 0.022341903299093246,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 2,
+                "history_length": 3,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 2.074732749508542,
+                  "end": 9.074732749508541,
+                  "duration": 7.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 189.917415953055,
+                  "final_distance": 0.02170596830546856,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 3,
+                "history_length": 4,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 0,
+                  "bg": 1,
+                  "start": 7.800416521797478,
+                  "end": 11.89365310956754,
+                  "duration": 4.093236587770061
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 189.917415953055,
+                  "final_distance": 0.02170596830546856,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 4,
+                "history_length": 5,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 5.961616516088393,
+                  "end": 14.464212765875674,
+                  "duration": 8.502596249787281
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 189.917415953055,
+                  "final_distance": 0.02170596830546856,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 5,
+                "history_length": 6,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 3,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 8.525646704708045,
+                  "end": 14.525646704708045,
+                  "duration": 6.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 6,
+                "history_length": 7,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 2,
+                  "bg": 2,
+                  "start": 3.2477306776274917,
+                  "end": 14.888207123329565,
+                  "duration": 11.640476445702074
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 195.33470972862096,
+                  "final_distance": 0.022341903299093246,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 7,
+                "history_length": 8,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 7,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 10.074732749508541,
+                  "end": 17.07473274950854,
+                  "duration": 7.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 8,
+                "history_length": 9,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 10,
+                  "fg": 5,
+                  "bg": 5,
+                  "start": 17.9726252337527,
+                  "end": 18.840234839433478,
+                  "duration": 0.8676096056807765
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 9,
+                "history_length": 10,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 1,
+                  "bg": 2,
+                  "start": 11.89365310956754,
+                  "end": 19.923267764875373,
+                  "duration": 8.029614655307833
+                },
+                "oracle_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": 0,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": true,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 193.9617584657483,
+                  "final_distance": 0.02166765369474888,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 10,
+                "history_length": 11,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 5,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 18.9423674175469,
+                  "end": 25.679536149585903,
+                  "duration": 6.737168732039002
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 11,
+                "history_length": 12,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 2,
+                  "bg": 2,
+                  "start": 17.328612783886523,
+                  "end": 30.328612783886523,
+                  "duration": 13.0
+                },
+                "oracle_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "oracle_target_idx": 1,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": false,
+                "otc_reward": -2.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 193.9617584657483,
+                  "final_distance": 0.02166765369474888,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 12,
+                "history_length": 13,
+                "observation": {
+                  "active": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 27.189772510427716,
+                  "end": 32.15272827188981,
+                  "duration": 4.962955761462098
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "oracle_target_idx": 2,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": false,
+                "otc_reward": -2.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 193.9617584657483,
+                  "final_distance": 0.02166765369474888,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 13,
+                "history_length": 14,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 32.1638215215785,
+                  "end": 37.808235007657615,
+                  "duration": 5.644413486079117
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 189.917415953055,
+                  "final_distance": 0.02170596830546856,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 14,
+                "history_length": 15,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 35.56552499520328,
+                  "end": 40.614779019126885,
+                  "duration": 5.049254023923602
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 195.33470972862096,
+                  "final_distance": 0.022341903299093246,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 15,
+                "history_length": 16,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 1,
+                  "fg": 2,
+                  "bg": 2,
+                  "start": 33.97561368550025,
+                  "end": 41.97561368550025,
+                  "duration": 8.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "decision_is_correct": false,
+                "otc_reward": -1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 195.33470972862096,
+                  "final_distance": 0.022341903299093246,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 16,
+                "history_length": 17,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 7,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 38.808235007657615,
+                  "end": 42.360317256748374,
+                  "duration": 3.552082249090759
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 17,
+                "history_length": 18,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 3,
+                  "fg": 1,
+                  "bg": 3,
+                  "start": 40.614779019126885,
+                  "end": 45.81269906816064,
+                  "duration": 5.197920049033755
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 18,
+                "history_length": 19,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 5,
+                  "fg": 1,
+                  "bg": 1,
+                  "start": 44.03235167063336,
+                  "end": 51.03235167063336,
+                  "duration": 7.0
+                },
+                "oracle_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "oracle_target_idx": null,
+                "predicted_action": [
+                  0,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": null,
+                "decision_is_correct": true,
+                "otc_reward": 0.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": null,
+                "info_otc": {}
+              },
+              {
+                "step": 19,
+                "history_length": 20,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "e_type": 0,
+                  "fg": 4,
+                  "bg": 3,
+                  "start": 52.51911049716654,
+                  "end": 57.73168881984061,
+                  "duration": 5.2125783226740765
+                },
+                "oracle_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "oracle_target_idx": 1,
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "decision_is_correct": false,
+                "otc_reward": -2.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 193.9617584657483,
+                  "final_distance": 0.02166765369474888,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
