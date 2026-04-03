@@ -78,8 +78,11 @@ class DualAgentStepRecord:
     step: int
     history_length: int
     observation: dict[str, Any]
+    oracle_action: list[int]
+    oracle_target_idx: int | None
     predicted_action: list[int]
     predicted_target_idx: int | None
+    decision_is_correct: bool
     otc_reward: float
     otc_terminated: bool
     otc_truncated: bool
@@ -261,6 +264,7 @@ class OpenTheChestsKukaInterface:
         try:
             obs, _ = env.reset(seed=seed)
             history: list[dict[str, Any]] = []
+            prefix_actions: list[list[int]] = []
             step_records: list[dict[str, Any]] = []
             opened_targets: list[int] = []
             already_invoked_targets: set[int] = set()
@@ -273,10 +277,21 @@ class OpenTheChestsKukaInterface:
                 history_item = obs_to_history_item(obs)
                 history.append(history_item)
 
+                oracle_results = evaluate_all_actions(
+                    env_name=env_name,
+                    seed=0 if seed is None else int(seed),
+                    prefix_actions=prefix_actions,
+                )
+                oracle_action = self._normalize_binary_action(
+                    choose_best_action(oracle_results)["action"]
+                )
+                oracle_target_idx = action_to_target_idx(oracle_action)
+
                 predicted_action = self._normalize_binary_action(
                     self.predictor.predict_action(history=history, env_name=env_name)
                 )
                 predicted_target_idx = action_to_target_idx(predicted_action)
+                decision_is_correct = predicted_target_idx == oracle_target_idx
 
                 kuka_result = None
                 should_invoke_kuka = predicted_target_idx is not None
@@ -291,6 +306,7 @@ class OpenTheChestsKukaInterface:
                 obs, reward, terminated, truncated, info_otc = env.step(
                     np.asarray(predicted_action, dtype=np.int8)
                 )
+                prefix_actions.append(predicted_action)
                 otc_return += float(reward)
 
                 step_records.append(
@@ -298,8 +314,11 @@ class OpenTheChestsKukaInterface:
                         step=step_count,
                         history_length=len(history),
                         observation=history_item,
+                        oracle_action=oracle_action,
+                        oracle_target_idx=oracle_target_idx,
                         predicted_action=predicted_action,
                         predicted_target_idx=predicted_target_idx,
+                        decision_is_correct=bool(decision_is_correct),
                         otc_reward=float(reward),
                         otc_terminated=bool(terminated),
                         otc_truncated=bool(truncated),

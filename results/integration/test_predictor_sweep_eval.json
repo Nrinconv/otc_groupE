@@ -1,0 +1,416 @@
+{
+  "env_names": [
+    "OpenTheChests-v0"
+  ],
+  "seeds": [
+    0
+  ],
+  "max_steps": 10,
+  "predictor_modes": [
+    "auto",
+    "rule"
+  ],
+  "kuka_modes": [
+    "heuristic"
+  ],
+  "kuka_reward_type": "advanced",
+  "invoke_kuka_once_per_target": false,
+  "experiments": [
+    {
+      "predictor_mode": "auto",
+      "kuka_mode": "heuristic",
+      "overall": {
+        "n_episodes": 1,
+        "episode_decision_rate": 1.0,
+        "episode_kuka_invocation_rate": 1.0,
+        "episode_success_rate": 1.0,
+        "mean_otc_return": 3.0,
+        "mean_otc_steps": 3.0,
+        "mean_target_detections": 3.0,
+        "mean_kuka_invocations": 3.0,
+        "mean_successful_kuka_invocations": 3.0,
+        "mean_first_detection_step": 0.0,
+        "mean_first_successful_kuka_step": 0.0,
+        "kuka_success_rate_given_invocation": 1.0,
+        "mean_kuka_final_distance": 0.0214538536965847,
+        "mean_kuka_steps": 16.0,
+        "n_total_kuka_invocations": 3,
+        "n_successful_kuka_invocations": 3
+      },
+      "by_env": {
+        "OpenTheChests-v0": {
+          "n_episodes": 1,
+          "episode_decision_rate": 1.0,
+          "episode_kuka_invocation_rate": 1.0,
+          "episode_success_rate": 1.0,
+          "mean_otc_return": 3.0,
+          "mean_otc_steps": 3.0,
+          "mean_target_detections": 3.0,
+          "mean_kuka_invocations": 3.0,
+          "mean_successful_kuka_invocations": 3.0,
+          "mean_first_detection_step": 0.0,
+          "mean_first_successful_kuka_step": 0.0,
+          "kuka_success_rate_given_invocation": 1.0,
+          "mean_kuka_final_distance": 0.0214538536965847,
+          "mean_kuka_steps": 16.0,
+          "n_total_kuka_invocations": 3,
+          "n_successful_kuka_invocations": 3
+        }
+      },
+      "raw": {
+        "env_names": [
+          "OpenTheChests-v0"
+        ],
+        "seeds": [
+          0
+        ],
+        "max_steps": 10,
+        "invoke_kuka_once_per_target": false,
+        "n_runs": 1,
+        "n_kuka_invocations": 3,
+        "kuka_success_rate": 1.0,
+        "runs": [
+          {
+            "env_name": "OpenTheChests-v0",
+            "seed": 0,
+            "total_steps": 3,
+            "opened_targets": [
+              2,
+              0,
+              1
+            ],
+            "otc_return": 3.0,
+            "otc_terminated": true,
+            "otc_truncated": false,
+            "steps": [
+              {
+                "step": 0,
+                "history_length": 1,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 0,
+                  "bg": 3,
+                  "start": 4.702791534208636,
+                  "end": 8.058121077896544,
+                  "duration": 3.3553295436879083
+                },
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 195.94399102183058,
+                  "final_distance": 0.02310916967689991,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 1,
+                "history_length": 2,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "e_type": 0,
+                  "fg": 2,
+                  "bg": 1,
+                  "start": 1.6888437030500962,
+                  "end": 8.216307413760488,
+                  "duration": 6.527463710710391
+                },
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 195.4591264349036,
+                  "final_distance": 0.02340993471443653,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 2,
+                "history_length": 3,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "e_type": 1,
+                  "fg": 4,
+                  "bg": 0,
+                  "start": 1.0356670011718534,
+                  "end": 11.1331793884046,
+                  "duration": 10.097512387232745
+                },
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "otc_reward": 1.0,
+                "otc_terminated": true,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 189.16875356765465,
+                  "final_distance": 0.017842456698417664,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "predictor_mode": "rule",
+      "kuka_mode": "heuristic",
+      "overall": {
+        "n_episodes": 1,
+        "episode_decision_rate": 1.0,
+        "episode_kuka_invocation_rate": 1.0,
+        "episode_success_rate": 1.0,
+        "mean_otc_return": 3.0,
+        "mean_otc_steps": 3.0,
+        "mean_target_detections": 3.0,
+        "mean_kuka_invocations": 3.0,
+        "mean_successful_kuka_invocations": 3.0,
+        "mean_first_detection_step": 0.0,
+        "mean_first_successful_kuka_step": 0.0,
+        "kuka_success_rate_given_invocation": 1.0,
+        "mean_kuka_final_distance": 0.0214538536965847,
+        "mean_kuka_steps": 16.0,
+        "n_total_kuka_invocations": 3,
+        "n_successful_kuka_invocations": 3
+      },
+      "by_env": {
+        "OpenTheChests-v0": {
+          "n_episodes": 1,
+          "episode_decision_rate": 1.0,
+          "episode_kuka_invocation_rate": 1.0,
+          "episode_success_rate": 1.0,
+          "mean_otc_return": 3.0,
+          "mean_otc_steps": 3.0,
+          "mean_target_detections": 3.0,
+          "mean_kuka_invocations": 3.0,
+          "mean_successful_kuka_invocations": 3.0,
+          "mean_first_detection_step": 0.0,
+          "mean_first_successful_kuka_step": 0.0,
+          "kuka_success_rate_given_invocation": 1.0,
+          "mean_kuka_final_distance": 0.0214538536965847,
+          "mean_kuka_steps": 16.0,
+          "n_total_kuka_invocations": 3,
+          "n_successful_kuka_invocations": 3
+        }
+      },
+      "raw": {
+        "env_names": [
+          "OpenTheChests-v0"
+        ],
+        "seeds": [
+          0
+        ],
+        "max_steps": 10,
+        "invoke_kuka_once_per_target": false,
+        "n_runs": 1,
+        "n_kuka_invocations": 3,
+        "kuka_success_rate": 1.0,
+        "runs": [
+          {
+            "env_name": "OpenTheChests-v0",
+            "seed": 0,
+            "total_steps": 3,
+            "opened_targets": [
+              2,
+              0,
+              1
+            ],
+            "otc_return": 3.0,
+            "otc_terminated": true,
+            "otc_truncated": false,
+            "steps": [
+              {
+                "step": 0,
+                "history_length": 1,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "e_type": 2,
+                  "fg": 0,
+                  "bg": 3,
+                  "start": 4.702791534208636,
+                  "end": 8.058121077896544,
+                  "duration": 3.3553295436879083
+                },
+                "predicted_action": [
+                  0,
+                  0,
+                  1
+                ],
+                "predicted_target_idx": 2,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 2,
+                  "steps": 16,
+                  "episode_return": 195.94399102183058,
+                  "final_distance": 0.02310916967689991,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 1,
+                "history_length": 2,
+                "observation": {
+                  "active": [
+                    1,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "e_type": 0,
+                  "fg": 2,
+                  "bg": 1,
+                  "start": 1.6888437030500962,
+                  "end": 8.216307413760488,
+                  "duration": 6.527463710710391
+                },
+                "predicted_action": [
+                  1,
+                  0,
+                  0
+                ],
+                "predicted_target_idx": 0,
+                "otc_reward": 1.0,
+                "otc_terminated": false,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 0,
+                  "steps": 16,
+                  "episode_return": 195.4591264349036,
+                  "final_distance": 0.02340993471443653,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              },
+              {
+                "step": 2,
+                "history_length": 3,
+                "observation": {
+                  "active": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "open": [
+                    1,
+                    0,
+                    1
+                  ],
+                  "e_type": 1,
+                  "fg": 4,
+                  "bg": 0,
+                  "start": 1.0356670011718534,
+                  "end": 11.1331793884046,
+                  "duration": 10.097512387232745
+                },
+                "predicted_action": [
+                  0,
+                  1,
+                  0
+                ],
+                "predicted_target_idx": 1,
+                "otc_reward": 1.0,
+                "otc_terminated": true,
+                "otc_truncated": false,
+                "kuka_result": {
+                  "success": true,
+                  "target_idx": 1,
+                  "steps": 16,
+                  "episode_return": 189.16875356765465,
+                  "final_distance": 0.017842456698417664,
+                  "terminated": true,
+                  "truncated": false,
+                  "controller_mode": "heuristic"
+                },
+                "info_otc": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
